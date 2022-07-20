@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="spsec.css" />
+    <title>Rock Paper Scissors</title>
+</head>
+
+<body class="bdy">
+    <div class="wrapper">
+        <div class="scorecard">
+            <img style="margin-left: 30px;" src="assets/title.png" />
+            <div class="score">
+                <p style="color: rgba(64, 64, 100, 0.776);;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size:xx-large;">Score</p>
+                <h1 style="color: rgb(210, 129, 129);" id="Score">0</h1>
+            </div>
+        </div>
+        <div class="hands">
+            <div class="rock"><img class="img" src="assets/Rock.png" onclick="pickhand('Rock')"></div>
+            <div class="paper"><img class="img" src="assets/Paper.png" onclick="pickhand('Paper')"></div>
+            <div class="scissors"><img class="img" src="assets/Scissors.png" onclick="pickhand('Scissors')"></div>
+        </div>
+        <div class="contest">
+            <div class="userhand">
+                <h1>
+                    You picked
+                </h1>
+                <div class="handImageContainer">
+                    <img id="user" src="assets/Rock.png">
+                </div>
+            </div>
+            <div class="ref">
+                <div class="dec">
+                    <h1 id="resh1">YOU WIN</h1>
+                </div>
+                <div class="newgame" id="plyagn" onclick="playagain()">PLAY AGAIN</div>
+            </div>
+            <div class="Computerhand">
+                <h1>Computer Picked</h1>
+                <div><img id="comppick" src="assets/Scissors.png"></div>
+            </div>
+        </div>
+    </div>
+    <audio src="musicsp/taratata-6264.mp3" autoplay="autoplay" loop="loop" id="my_audio"></audio>
+</body>
+<script src="spsec.js">
+    window.onload = function() {
+        document.getElementById("my_audio").play();
+    }
+</script>
+
+</html>

@@ -1,0 +1,89 @@
+.gamecontainer{
+   margin-top: 150px;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   position: relative;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(3,10vw);
+  grid-template-rows: repeat(3,10vw);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.box{
+    border: 2px solid rgb(245, 245, 245);
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    margin-top: 50px;
+    width: 0px;
+    transition: width 1s ease-in-out;
+}
+.ing{
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.box:hover {
+    background-color: rgba(132, 110, 145, 0.38);
+}
+.gameinfo{
+    color: aliceblue;
+    font-size: large;
+    padding: 0 34px;
+    transform: translate3d(0,-8px,0);
+}
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+.line{
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: #d51b2d;
+    transition: width 1s ease-in-out;
+    box-shadow: 1px 1px 1px red;
+}
+#reset {
+    margin: 0 23px;
+    padding: 1px 18px;
+    background: #efebf1;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2';
+    font-size: 20px;
+    font-weight: bolder;
+    box-shadow: 2px 2px 2px rgb(133, 114, 114);
+}
+#reset:hover{
+    background-color: lightgreen;
+}
+@media screen and (max-width:800px) {
+    .gameinfo{
+        margin-top: 34px;
+    }
+    .gameinfo h1{
+        font-size: 2.5rem;
+    }
+    .container{
+        grid-template-columns: repeat(3,20vw);
+        grid-template-rows: repeat(3,20vw);
+    }
+}

@@ -1,0 +1,96 @@
+.mainbody {
+    /*background-color:rgba(0, 2, 14, 0.86);*/
+    background-image: url('images/Gaming-PC-Wallpaper-HD.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.games {
+    margin: 0 auto;
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    width: max-content;
+    justify-content: space-evenly;
+    gap: 25px;
+    column-gap: 50px;
+    padding: 10px;
+}
+
+.tic_tac_toe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.spse {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.snakegame {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.wordel {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.games img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 280px;
+    height: 180px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(224, 99, 228);
+}
+
+.games img:hover {
+    box-shadow: 10px 10px 10px rgba(100, 208, 232, 0.867);
+    transform: scale(1.1);
+}
+
+.res {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.Title {
+    font-size: 50px;
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+    color: rgba(90, 182, 227, 0.816);
+    text-shadow: 2px 2px rgba(21, 240, 192, 0.227);
+    justify-content: center;
+    align-content: center;
+}
+
+.gametitle {
+    margin-top: 35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(211, 97, 226, 0.85);
+}
+
+.anch {
+    text-decoration-line: none;
+}
